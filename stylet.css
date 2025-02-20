@@ -5,54 +5,78 @@
     font-family: "Poppins", serif;
 }
 body{
-    display: flex;
+
     background-color:rgb(189, 189, 223)
+}
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }
 .header{
     position: fixed;
     top: 0px;
+    background-color: rgb(73, 52, 142);
+    width: 15%;
+    height: 100%;
+
 }
 .navbar{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(73, 52, 142);
-    max-width: 80px;
-    height: 100vh;
+    /* max-width: 80px; */
     justify-content: space-between;
  }
- .left-side>a{
+ .navbar a{
     text-decoration: none;
     color: rgb(46, 42, 42);
     padding: 15px;
     width: 100%;
-
-
  }
- .left-side ul{
+ .navbar ul{
     list-style: none;
-    padding: 0px;
+    padding: 50px 0;
     margin-top: 50px;
+    
  }
- .left-side ul li {
+ .navbar ul li a {
     margin: 20px;
+    color: #f2f2f2f2;
+    padding: 60px;
+    line-height: 73px;
+    transition: transform 2s;
  }
+ .navbar ul li a{
+    transform: scale(2 2);
+ }
+ 
 
 .container{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-left: 15%;
+    width: 85%;
+}
+.home {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin: 300px 0;
 }
 .profile{
-    display: flex;
-    align-items: center;
+    /* display: flex;
+    align-items: center; */
     padding: 50px;
     width: 250px;  
     box-shadow: 0px 4px 20px rgba(53, 53, 53, 0.1);
     background: rgb(204, 202, 202);
-    border-radius: 1000px;
-    margin-top: 102px;
+    border-radius: 50%;
+    /* margin-top: 102px; */
 }
 .profile>img{
     width: 150px;
@@ -62,14 +86,21 @@ body{
     object-fit: cover;
     
 }
+.icons i{
+    margin-right:50px;
+    font-size: 1.5rem;
+    margin-top: 60px;
+
+}
 .info{
-    margin-left: 30px;
-    margin-top: 102px;
+    /* margin-left: 30px;
+    margin-top: 102px; */
 }
 .intro{
     font-size: 20px;
     color: rgb(40, 3, 1);
     font-weight: 300;
+    margin-bottom: 10px;
 }
 h1{
     font-size: 30px;
@@ -92,5 +123,37 @@ h1{
 html{
     scroll-behavior: smooth;
 }
+.container-abt{
+     display: flex;
+    justify-content: center; 
+    margin-bottom: 171px;
 
+}
 
+#about {
+    display: flex;
+}
+.left-sec img{
+    width: 57%;
+    border-radius: 50%;
+    margin-left: 269px;
+    }
+    
+    
+
+.right-sec{
+    margin-left: 30px;
+    margin-top: 140px;
+}
+.container-skill{
+    display: grid;
+    justify-content: center;
+    margin-top: 300px;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-bottom: 300px;
+}
+#skill{
+    display: flex;
+
+}
